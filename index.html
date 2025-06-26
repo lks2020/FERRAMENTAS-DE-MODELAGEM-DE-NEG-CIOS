@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model Canvas - Chácara 2 Irmãos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray-blue background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to start to allow scrolling if needed */
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .canvas-container {
+            display: grid;
+            grid-template-columns: 0.7fr 0.7fr 1.6fr 0.7fr 0.7fr; /* Adjusted columns for balance */
+            grid-template-rows: auto auto; /* Two rows for the blocks */
+            gap: 8px; /* Reduced gap for a tighter fit */
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 1200px; /* Max width for desktop view */
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+        .canvas-block {
+            background-color: #e2e8f0; /* Light slate blue */
+            border: 1px solid #cbd5e1; /* Lighter border */
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 120px; /* Minimum height for consistency */
+            transition: all 0.2s ease-in-out;
+        }
+        .canvas-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .block-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #2d3748; /* Darker text for titles */
+            font-size: 0.95rem; /* Slightly larger title */
+        }
+        .block-content {
+            font-size: 0.85rem;
+            color: #4a5568; /* Medium gray text */
+            line-height: 1.4;
+        }
+        .main-title {
+            grid-column: 1 / -1; /* Spans all columns */
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2c5282; /* Dark blue title */
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #a0aec0; /* Subtler border */
+        }
+
+        /* Specific grid positioning for Business Model Canvas layout */
+        .key-partners { grid-area: 1 / 1 / 2 / 2; }
+        .key-activities { grid-area: 1 / 2 / 2 / 3; }
+        .value-propositions { grid-area: 1 / 3 / 2 / 4; }
+        .customer-relationships { grid-area: 1 / 4 / 2 / 5; }
+        .customer-segments { grid-area: 1 / 5 / 2 / 6; }
+        .key-resources { grid-area: 2 / 2 / 3 / 3; }
+        .cost-structure { grid-area: 2 / 1 / 3 / 3; } /* Spans two columns */
+        .revenue-streams { grid-area: 2 / 4 / 3 / 6; } /* Spans two columns */
+    
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .canvas-container {
+                grid-template-columns: 1fr; /* Single column layout on small screens */
+                grid-template-rows: auto; /* Auto rows */
+                gap: 10px;
+                padding: 15px;
+            }
+            .main-title {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+            .canvas-block {
+                grid-area: auto !important; /* Reset grid area for linear flow */
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="canvas-container">
+        <h1 class="main-title">Business Model Canvas - Chácara 2 Irmãos</h1>
+
+        <!-- Key Partners -->
+        <div class="canvas-block key-partners">
+            <h2 class="block-title">Parcerias Principais</h2>
+            <p class="block-content">Fornecedores locais de insumos, escolas públicas (para contratos de fornecimento), comerciantes locais (feiras, pequenos mercados) e entregadores pontuais.</p>
+        </div>
+
+        <!-- Key Activities -->
+        <div class="canvas-block key-activities">
+            <h2 class="block-title">Atividades-Chave</h2>
+            <p class="block-content">Produção agrícola (plantio, cultivo, colheita), logística de entrega, participação em licitações públicas, marketing e comunicação (WhatsApp, redes sociais).</p>
+        </div>
+
+        <!-- Value Propositions -->
+        <div class="canvas-block value-propositions">
+            <h2 class="block-title">Proposta de Valor</h2>
+            <p class="block-content">Alimentos frescos e de qualidade superior, produção local e familiar, entrega pontual e direta ao cliente (institucional/varejo), atendimento personalizado e selo "Maná da Terra".</p>
+        </div>
+
+        <!-- Customer Relationships -->
+        <div class="canvas-block customer-relationships">
+            <h2 class="block-title">Relacionamento com Clientes</h2>
+            <p class="block-content">Atendimento direto e personalizado, coleta de feedback para melhorias, estratégias de fidelização de clientes (ex: comunicação ativa via WhatsApp), construção de confiança pela qualidade.</p>
+        </div>
+
+        <!-- Customer Segments -->
+        <div class="canvas-block customer-segments">
+            <h2 class="block-title">Segmentos de Clientes</h2>
+            <p class="block-content">Escolas públicas (principal), consumidores locais (varejo direto), potencial público para cestas de assinatura semanais.</p>
+        </div>
+
+        <!-- Key Resources -->
+        <div class="canvas-block key-resources">
+            <h2 class="block-title">Recursos-Chave</h2>
+            <p class="block-content">Insumos agrícolas, veículo próprio para transporte, mão de obra familiar, plataformas de comunicação digital (WhatsApp, redes sociais).</p>
+        </div>
+
+        <!-- Cost Structure -->
+        <div class="canvas-block cost-structure">
+            <h2 class="block-title">Estrutura de Custos</h2>
+            <p class="block-content">Insumos (sementes, fertilizantes), transporte (combustível, manutenção do veículo), embalagens, manutenção de equipamentos, custo de internet/comunicação.</p>
+        </div>
+
+        <!-- Revenue Streams -->
+        <div class="canvas-block revenue-streams">
+            <h2 class="block-title">Fontes de Receita</h2>
+            <p class="block-content">60% contratos públicos (licitações com escolas), 40% vendas diretas (consumidores locais). Pagamentos à vista e a prazo (conforme contrato institucional).</p>
+        </div>
+    </div>
+</body>
+</html>
